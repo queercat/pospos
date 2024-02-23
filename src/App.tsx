@@ -42,7 +42,7 @@ export const App = () => {
             ${(tipPercent * initialPrice).toFixed(2)}
           </span>
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 align-middle justify-items-center py-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 align-middle justify-items-center py-4">
           <TipButton
             disabled
             onClick={() => {
@@ -74,7 +74,9 @@ export const App = () => {
         setIsOpen={setIsOpen}
         uiBackground={uiBackground}
       >
-        <h1>Please write, I hate service workers</h1>
+        <div className="p-4 bg-white rounded-lg">
+          <h1>Please write, I hate service workers</h1>
+        </div>
       </Dialogue>
     </>
   );

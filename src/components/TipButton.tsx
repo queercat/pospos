@@ -18,7 +18,7 @@ export const TipButton = ({
       onClick={() => {
         onClick && onClick();
       }}
-      className={`flex justify-center items-center ${greed ? "bg-emerald-300" : ""} ${!disabled ? "hover:bg-active bg-slate-200" : "bg-slate-500 text-white"} rounded min-h-16 min-w-48 `}
+      className={`flex justify-center items-center ${greed ? "bg-emerald-300" : ""} ${!disabled ? " bg-slate-200" : "bg-slate-500 text-white"} rounded-lg min-h-24 min-w-48 `}
       animate={greed ? { scale: 25 } : {}}
       transition={{ duration: 60 * 10 * 10, ease: "linear" }}
     >
